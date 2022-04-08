@@ -31,3 +31,19 @@ __________________________________________________________________________
 
 >Expected Output: "4";
 __________________________________________________________________________
+
+## Describe pizzaSize();
+
+* >Test: "It should update the price besed on the size the user selects."
+
+  >Code: let pizzaSize = this.size, if (pizzaSize === "small") this.price = 10;
+
+  >Expected Output: "10";
+  _________________________________________________________________
+
+* >Test: "It should return the final price to the user."
+
+  >Code: return this.price
+
+  >Expected Output: "10";
+    _______________________________________________________________
