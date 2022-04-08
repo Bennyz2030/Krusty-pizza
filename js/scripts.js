@@ -17,3 +17,12 @@ Order.prototype.pizzaToppings = function() {
   }
   return this.price;
 }
+
+Order.prototype.pizzaSize = function() {
+  let zaSize = this.size;
+
+  if (zaSize === "small") {
+    this.price += 10;
+  }
+  return this.price;
+}
