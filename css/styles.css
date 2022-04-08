@@ -11,6 +11,7 @@
   text-align: center;
   font-family:fantasy;
   border:ridge blue;
+
 }
 
 h1 {
@@ -23,7 +24,21 @@ small {
 }
 
 body {
-  background-image: url(../img/bikini-bottom3.jpeg);
-  
+  background-image: url(../img/krab.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.row {
+  border: ridge blue;
+  background-color: rgb(122, 222, 222);
+  font-family: fantasy;
+  padding: 10px;
+}
+
+button:hover {
+  color: rgb(122, 222, 222) ;
+  background-color: black;
 }
 
