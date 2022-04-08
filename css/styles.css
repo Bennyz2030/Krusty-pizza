@@ -1,3 +1,7 @@
 .orderDetails {
   display:none;
 }
+
+#delivery {
+  width: 50%;
+}

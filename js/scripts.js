@@ -44,3 +44,17 @@ Order.prototype.pizzaToppings = function() {
   }
   return this.price;
 }
+
+$(document).ready(function() {
+  $("#userOrder").submit(function(event) {
+    event.preventDefault();
+    let firstTopping = $("#topping1").val();
+    let secondTopping = $("#topping2").val();
+    let orderSize = $("#size").val();
+    let newOrder = new Order(firstTopping, secondTopping, orderSize);
+    newOrder.pizzaSize();
+    newOrder.pizzaToppings();
+    $('.output').text(newOrder.price).prepend("$");
+    $(".orderDetails").show();
+  });
+});
