@@ -7,9 +7,13 @@ function Order(topping1, topping2, size) {
 
 Order.prototype.pizzaToppings = function() {
   let toppingOne = this.topping1;
+  let toppingTwo = this.topping2;
 
   if (toppingOne === "pepperoni") {
     this.price += 4;
+  }
+  if (toppingTwo === "onion") {
+    this.price += 2;
   }
   return this.price;
 }
