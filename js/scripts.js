@@ -5,6 +5,25 @@ function Order(topping1, topping2, size) {
   this.price = 0;
 }
 
+function Pizzas() {
+  this.orders = {};
+  this.currentId = 0;
+}
+
+AddressBook.prototype.addOrder = function(order) {
+  order.id = this.assignId();
+  this.orders[order.id] = order;
+};
+
+AddressBook.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
+};
+
+
+
+
+
 Order.prototype.pizzaSize = function() {
   let zaSize = this.size;
 
