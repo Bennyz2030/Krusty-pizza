@@ -8,8 +8,14 @@ function Order(topping1, topping2, size) {
 Order.prototype.pizzaSize = function() {
   let zaSize = this.size;
 
-  if (zaSize === "small") {
+  if (zaSize === "Small") {
     this.price += 10;
+  } else if (zaSize ==="Medium" || zaSize === "Small Gluten Free Crust") {
+    this.price += 12;
+  } else if (zaSize === "Large") {
+    this.price += 14;
+  } else if (zaSize === "Family") {
+    this.price += 16;
   }
   return this.price;
 }
