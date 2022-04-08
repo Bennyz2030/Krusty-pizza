@@ -8,6 +8,55 @@
   <title>Krusty Krab Pizza</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class ="jumbotron"><h1>Krusty Krab Pizza<br><small>Is the pizza for you and me</small></h1></div>
+    <form id="userOrder">
+      <div class="row">
+        <div class="col-4">
+          <h3>Choose a Size</h3>
+          <select class="form-control" id="size">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Family</option>
+            <option>Small Gluten Free Crust</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <h3>First topping</h3>
+          <select class="form-control" id="topping1">
+            <option value="1">Pepperoni</option>
+            <option value="1">Sausage</option>
+            <option value="1">Salami</option>
+            <option value="3">Anchovies (You monster!)</option>
+            <option value="2">Kelp</option>
+            <option value="2">Onion</option>
+            <option value="2">Peppers</option>
+            <option value="2">Olives</option>
+            <option value="4">None</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <h3>Second topping</h3>
+          <select class="form-control" id="topping2">
+            <option value="1">Pepperoni</option>
+            <option value="1">Sausage</option>
+            <option value="1">Salami</option>
+            <option value="3">Anchovies (You monster!)</option>
+            <option value="2">Kelp</option>
+            <option value="2">Onion</option>
+            <option value="2">Peppers</option>
+            <option value="2">Olives</option>
+            <option value="4">None</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn-success">Submit Order</button>
+    </form>
+    <p class="orderDetails"><strong>Order Total:</strong>
+      <div class="output"></div>
+      <br><div class="orderDetails"><strong>Thank you for your order!</strong></div>
+      </p>
+  </div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 >Test: "It should return an object with properties for pizza toppings and size."
 
->Code: const newOrtder = new Order(["pepperoni, "onions"], "small");
+>Code: const newOrtder = new Order("pepperoni", "onions", "small");
 
 >Expected Output: Order { toppings: ["pepperoni", "onions"], size: "small" };
 _______________________________________________________________________
@@ -12,7 +12,7 @@ _______________________________________________________________________
 >Test: "It should update the price of the pizza based on the topping the user selects."
 
 >Code: let pizzaTopping = this.topping
->if (pizzaTopping === pepperoni") this.price = 2;
+>if (pizzaTopping === "pepperoni") this.price = 2;
 
 >Expected Output: "2";
 _________________________________________________________________________
