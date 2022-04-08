@@ -26,7 +26,7 @@ _On this web page the user can customize the size and toppings of a pizza, and w
 * After cloning the project, navigate into it using the command "cd krusty-pizza"
 * Use the command "git remote" to confirm the creation of the new local repository
 * Open the project with the code editor of your choice, or navigate to the top level of the directory and open the index.html file in your web browser
-* Or, open in GH Pages at https://bennyz2030.github.io/krusty-pizza/
+* Or, open in GitHub Pages [here](https://bennyz2030.github.io/Krusty-pizza/)_
 
 
 ## Known Bugs
