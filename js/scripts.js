@@ -27,9 +27,7 @@ Order.prototype.pizzaToppings = function() {
   if (toppingOne === "1") {
     this.price += 4;
   } else if (toppingOne === "2") {
-    this.price+= 2;
-  } else if (toppingOne === "3") {
-    this.price += 1000;
+    this.price += 2;
   } else if (toppingOne === "4") {
     this.price += 0;
   }

@@ -55,20 +55,28 @@ _______________________________________________________________________
 
 ## Describe: pizzaToppings();
 
->Test: "It should update the price of the pizza based on the topping the user selects."
+>Test: "It should update the price of the pizza if the user adds a veggie."
 
 >Code: let pizzaTopping = this.topping
->if (pizzaTopping === "pepperoni") this.price = 2;
+>if (pizzaTopping === "onion") this.price = 2;
 
 >Expected Output: "2";
+_________________________________________________________________________
+
+>Test: "It should update the price of the pizza if the user adds a meat."
+
+>Code: let pizzaTopping = this.topping
+>if (pizzaTopping === "pepperoni") this.price = 4;
+
+>Expected Output: "4";
 _________________________________________________________________________
 
 >Test: "It should allow to user to select multiple topping and update the price accordingly."
 
 >Code: let pizzaToppings = this.topping1 + this.topping2
-> if (pizzaTopping1 === "pepperoni" && pizzaTopping2 === "onions" ) this.price = ["4"];
+> if (pizzaTopping1 === "pepperoni" && pizzaTopping2 === "onions" ) this.price = "6";
 
->Expected Output: "4";
+>Expected Output: "6";
 __________________________________________________________________________
 
 >Test: "It should return the price."
